@@ -1,8 +1,10 @@
 {
     "nav.home": "Home",
-    "nav.carTax": "Car Tax",
     "nav.coastFire": "Coast FIRE",
-    "carTax.title": "Business Car Tax Calculator",
-    "carTax.price": "Car Price",
-    "carTax.calculate": "Calculate"
+    "nav.fire": "FIRE",
+    "title.fire": "FIRE Calculator",
+    "nav.carTax": "Car Benefit",
+    "title.carTax": "Opportyunity Cost of Car Benefit",
+    "nav.expenses": "Opportyunity Cost Expenses",
+    "title.expenses": "Opportyunity Cost of Expenses"
   }

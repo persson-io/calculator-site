@@ -7,7 +7,7 @@ function calculateCoastFire(currentAge, retirementAge, annualExpenses) {
 
 // Remove old event listeners and consolidate into one form submission handler
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('coastfire-form');
+    const form = document.getElementById('fire-form');
     if (form) {
         form.addEventListener('submit', function(e) {
             e.preventDefault();

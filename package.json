@@ -7,7 +7,7 @@
   "scripts": {
     "devbuild": "tailwindcss -i ./src/styles/input.css -o ./src/output.css --watch",
     "build": "tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css",
-    "preview": "live-server src"
+    "start": "live-server src"
   },
   "devDependencies": {
     "live-server": "^1.2.1",

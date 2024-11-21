@@ -1,8 +1,10 @@
 {
     "nav.home": "Hem",
-    "nav.carTax": "Förmånsbil",
     "nav.coastFire": "Coast FIRE",
-    "carTax.title": "Företagsbilskatt Kalkylator",
-    "carTax.price": "Bilpris",
-    "carTax.calculate": "Beräkna"
+    "nav.fire": "FIRE",
+    "title.fire": "FIRE Kalkylator",
+    "nav.carTax": "Förmånsbil",
+    "title.carTax": "Alternativkostnad för förmånsbil",
+    "nav.expenses": "Utlägg",
+    "title.expenses": "Alternativkostnad för utlägg"
   }
