@@ -1,18 +1,15 @@
 {
   "name": "calculator-website",
   "version": "1.0.0",
-  "description": "A simple website containing various calculators including tax impact of buying a business car and a coastfire calculator.",
+  "description": "A simple website containing various client-side calculators including tax impact of buying a business car and a coastfire calculator.",
   "main": "src/index.html",
+  "type": "module",
   "scripts": {
     "devbuild": "tailwindcss -i ./src/styles/input.css -o ./src/output.css --watch",
     "build": "tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css",
-    "start": "live-server src"
+    "preview": "live-server src"
   },
   "devDependencies": {
-    "live-server": "^1.2.1",
-    "tailwindcss": "^3.4.15"
-  },
-  "dependencies": {
     "live-server": "^1.2.1",
     "tailwindcss": "^3.4.15"
   },
