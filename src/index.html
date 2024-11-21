@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Website</title>
+    <link rel="stylesheet" href="styles/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center justify-between h-16">
+                <h1 class="text-2xl font-bold text-gray-800">Calculator Hub</h1>
+                <ul class="flex space-x-4">
+                    <li><a href="pages/car-tax.html" class="px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 transition" data-i18n="nav.carTax"></a></li>
+                    <li><a href="pages/coast-fire.html" class="px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 transition" data-i18n="nav.coastFire"></a></li>
+                </ul>
+                <select id="languageSelector">
+                    <option value="en">EN</option>
+                    <option value="sv">SV</option>
+                </select>
+            </nav>
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Choose Your Calculator</h2>
+            <p class="text-gray-600 mb-8">Select a calculator from our suite of financial tools</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <a href="pages/car-tax.html" class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold mb-2">Car Tax Calculator</h3>
+                    <p class="text-gray-600">Calculate your vehicle tax easily</p>
+                </a>
+                <a href="pages/coast-fire.html" class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold mb-2">Coast FIRE Calculator</h3>
+                    <p class="text-gray-600">Plan your financial independence</p>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-auto py-6 text-center text-gray-600">
+        <p>&copy; 2025 Calculator Hub</p>
+    </footer>
+    <script src="scripts/carTaxCalculator.js"></script>
+    <script src="scripts/coastFireCalculator.js"></script>
+    <script type="module">
+        import i18n from './scripts/i18n.js';
+        
+        document.getElementById('languageSelector').addEventListener('change', (e) => {
+            i18n.setLanguage(e.target.value);
+        });
+        
+        // Initialize translations
+        i18n.init();
+    </script>
+</body>
+</html>
