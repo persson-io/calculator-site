@@ -12,6 +12,10 @@
     "live-server": "^1.2.1",
     "tailwindcss": "^3.4.15"
   },
-  "author": "",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "tailwindcss": "^3.4.15"
+  },
+  "author": "Rasmus Persson",
   "license": "MIT"
 }
