@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
             resultContent.innerHTML = `
                 <p class="text-gray-600">Years until retirement: ${yearsToRetirement}</p>
-                <p class="text-gray-600">Annual Expenses: $${annualExpenses.toLocaleString()}</p>
-                <p class="text-xl font-semibold text-blue-600 mt-2">Target Amount: $${targetAmount.toLocaleString()}</p>
+                <p class="text-gray-600">Annual Expenses: ${annualExpenses.toLocaleString()}</p>
+                <p class="text-xl font-semibold text-blue-600 mt-2">Target Amount: ${targetAmount.toLocaleString()}</p>
             `;
         });
     }

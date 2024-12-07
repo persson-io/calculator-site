@@ -1,10 +1,11 @@
 {
-    "nav.home": "Home",
-    "nav.coastFire": "Coast FIRE",
-    "nav.fire": "FIRE",
-    "title.fire": "FIRE Calculator",
-    "nav.carTax": "Car Benefit",
-    "title.carTax": "Opportyunity Cost of Car Benefit",
-    "nav.expenses": "Opportyunity Cost Expenses",
-    "title.expenses": "Opportyunity Cost of Expenses"
-  }
+  "home.nav": "Home",
+  "coastFire.nav": "Coast FIRE",
+  "fire.nav": "FIRE",
+  "fire.title": "FIRE Calculator",
+  "carTax.nav": "Car Benefit",
+  "carTax.title": "Opportunity Cost of Car Benefit",
+  "expenses.nav": "Opportunity Cost Expenses",
+  "expenses.title": "Opportunity Cost of Expenses",
+  "monthlySavings.title": "Monthly Savings"
+}

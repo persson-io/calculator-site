@@ -1,10 +1,11 @@
 {
-    "nav.home": "Hem",
-    "nav.coastFire": "Coast FIRE",
-    "nav.fire": "FIRE",
-    "title.fire": "FIRE Kalkylator",
-    "nav.carTax": "Förmånsbil",
-    "title.carTax": "Alternativkostnad för förmånsbil",
-    "nav.expenses": "Utlägg",
-    "title.expenses": "Alternativkostnad för utlägg"
+    "home.nav": "Hem",
+    "coastFire.nav": "Coast FIRE",
+    "fire.nav": "FIRE",
+    "fire.title": "FIRE Kalkylator",
+    "carTax.nav": "Förmånsbil",
+    "carTax.title": "Alternativkostnad för förmånsbil",
+    "expenses.nav": "Utlägg",
+    "expenses.title": "Alternativkostnad för utlägg",
+    "monthlySavings.title": "Månadsspara"
   }

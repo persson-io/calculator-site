@@ -5,18 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator Website</title>
     <link rel="stylesheet" href="styles/output.css">
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-stone-200 min-h-screen">
     <header class="bg-white shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <nav class="flex items-center justify-between h-16">
                 <h1 class="text-2xl font-bold text-gray-800">Calculator Hub</h1>
-                <ul class="flex space-x-4">
-                    <!-- <li><a href="pages/car-tax.html" class="px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 transition" data-i18n="nav.carTax"></a></li> -->
-                    <li><a href="pages/fire.html" class="px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 transition" data-i18n="nav.fire"></a></li>
-                    <li><a href="pages/expenses-alternative-cost.html" class="px-4 py-2 rounded-lg text-gray-600 hover:bg-gray-100 transition" data-i18n="nav.expenses"></a></li>
-                </ul>
                 <select id="languageSelector">
                     <option value="en">EN</option>
                     <option value="sv">SV</option>
@@ -34,12 +28,16 @@
                     <p class="text-gray-600">Calculate your vehicle tax easily</p>
                 </a> -->
                 <a href="pages/fire.html" class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition">
-                    <h3 class="text-xl font-semibold mb-2" data-i18n="title.fire"></h3>
+                    <h3 class="text-xl font-semibold mb-2" data-i18n="fire.title"></h3>
                     <p class="text-gray-600">Plan your financial independence</p>
                 </a>
                 <a href="pages/expenses-alternative-cost.html" class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition">
-                    <h3 class="text-xl font-semibold mb-2" data-i18n="title.expenses"></h3>
+                    <h3 class="text-xl font-semibold mb-2" data-i18n="expenses.title"></h3>
                     <p class="text-gray-600">Calculate the opportunity cost of buying a ware with taking out salary</p>
+                </a>
+                <a href="pages/monthly-savings.html" class="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold mb-2" data-i18n="monthlySavings.title">Monthly Savings Calculator</h3>
+                    <p class="text-gray-600">Visualize your wealth growth over time</p>
                 </a>
             </div>
         </div>

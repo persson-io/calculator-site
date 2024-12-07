@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Savings Calculator</title>
+    <link rel="stylesheet" href="../styles/output.css">
+</head>
+
+<body class="bg-stone-200 min-h-screen">
+    <header class="bg-white shadow-sm mb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center h-16">
+                <a href="../index.html" class="text-gray-600 hover:text-gray-900 mr-4">← Back</a>
+                <h1 class="text-2xl font-bold text-gray-800">Monthly Savings Calculator</h1>
+            </nav>
+        </div>
+    </header>
+    <main class="max-w-lg mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mt-6 p-4 bg-white rounded-lg shadow-md text-center">
+            <h2 class="text-2xl text-gray-800">How much can monthly savings get you?</h2>
+            <br>
+            <h2 class="text-2xl font-bold text-gray-800"> <span id="totalSavingsValue">0</span></h2>
+        </div>
+        <form id="savingsForm" class="bg-white shadow-md rounded-lg p-6 space-y-4 mt-4">
+            <div class="space-y-2">
+                <label for="startingAmount" class="block text-sm font-medium text-gray-700">
+                    Starting Amount: <span id="startingAmountValue">0</span>
+                </label>
+                <input type="range" id="startingAmount" min="0" max="10000000" step="10000" value="1000000" class="w-full">
+            </div>
+            <div class="space-y-2">
+                <label for="monthlySaving" class="block text-sm font-medium text-gray-700">
+                    Monthly Saving: <span id="monthlySavingValue">1,000</span>
+                </label>
+                <input type="range" id="monthlySaving" min="0" max="45000" step="1000" value="20000" class="w-full">
+            </div>
+            <div class="space-y-2">
+                <label for="yearlyGrowth" class="block text-sm font-medium text-gray-700">
+                    Predicted Yearly Growth (%): <span id="yearlyGrowthValue">5%</span>
+                </label>
+                <input type="range" id="yearlyGrowth" min="0" max="20" step="1" value="7" class="w-full">
+            </div>
+            <div class="space-y-2">
+                <label for="savingYears" class="block text-sm font-medium text-gray-700">
+                    Saving Years: <span id="savingYearsValue">30</span>
+                </label>
+                <input type="range" id="savingYears" min="1" max="30" step="1" value="15" class="w-full">
+            </div>
+        </form>
+    </main>
+    <script src="../scripts/monthlySavingsCalculator.js"></script>
+</body>
+
+</html>
