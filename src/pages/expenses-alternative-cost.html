@@ -36,21 +36,18 @@
             <div class="space-y-2">
                 <div class="flex items-center justify-between"></div>
                     <label for="haveStateTax" class="text-sm font-medium text-gray-700">State Income Tax:</label>
-                    <input type="checkbox" id="haveStateTax" 
+                    <input type="checkbox" id="haveStateTax" checked 
                         class="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
                 </div>
             </div>
-            <button type="submit" 
-                class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition">
-                Calculate Opportunity Cost
-            </button>
         </form>
         <div id="result" class="mt-6 p-4 bg-white rounded-lg shadow-md">
-            <p class="text-lg font-medium text-gray-900">Results:</p>
-            <p class="text-gray-400">Enter values above and click calculate to see results</p>
+            <p class="text-lg font-medium text-gray-900">Results</p>
             <div id="resultContent" class="mt-2">
-                <p class="text-gray-600">Salary that can be paid out if the ware is not bought: --</p>
-                <p class="text-gray-600">Cost for the company to pay out the price of the ware in salary: --</p>
+                <p class="text-gray-600">Net salary that can be paid if the ware is not bought:</p>
+                <p class="text-2xl font-bold text-gray-800"> <span>6,087 kr</span></p>
+                <p class="text-gray-600">Cost for the company to pay out 20,000 kr in net salary:</p>
+                <p class="text-2xl font-bold text-gray-800"> <span>52,568 kr</span></p>
             </div>
         </div>
     </main>

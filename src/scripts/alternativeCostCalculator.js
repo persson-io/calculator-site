@@ -22,23 +22,37 @@ function calculateAlternativeCost(VAT, priceIncVAT, trueTax) {
 
 // Remove old event listeners and consolidate into one form submission handler
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('expensesForm');
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const prIcVAT = parseInt(document.getElementById('priceIncVAT').value);
-            const V = parseInt(document.getElementById('VAT').value) / 100;
-            const taxTbl = parseFloat(document.getElementById('taxTable').value) / 100;;
-            const StateTax = (document.getElementById('haveStateTax').checked);
-            const resultContent = document.getElementById('resultContent');
-            
-            const { trueTax } = calculateTrueTax(taxTbl, StateTax);
-            const { corporateCostBuyPrivate, extraSalary } = calculateAlternativeCost(V, prIcVAT ,trueTax);
-            
-            resultContent.innerHTML = `
-                <p class="text-gray-600">Salary that can be paid if the ware is not bought: ${extraSalary.toLocaleString()} kr</p>
-                <p class="text-gray-600">Cost for the company to pay out ${prIcVAT.toLocaleString()} kr in salary: ${corporateCostBuyPrivate.toLocaleString()} kr</p>
-            `;
-        });
+    const priceIncVATInput = document.getElementById('priceIncVAT');
+    const VATInput = document.getElementById('VAT');
+    const taxTableInput = document.getElementById('taxTable');
+    const haveStateTaxInput = document.getElementById('haveStateTax');
+    const resultContent = document.getElementById('resultContent');
+
+    function updateResults() {
+        const prIcVAT = parseInt(priceIncVATInput.value);
+        const V = parseInt(VATInput.value) / 100;
+        const taxTbl = parseFloat(taxTableInput.value) / 100;
+        const StateTax = haveStateTaxInput.checked;
+        
+        const { trueTax } = calculateTrueTax(taxTbl, StateTax);
+        const { corporateCostBuyPrivate, extraSalary } = calculateAlternativeCost(V, prIcVAT ,trueTax);
+        
+        resultContent.innerHTML = `
+            <p class="text-gray-600">Net salary that can be paid if the ware is not bought:</p>
+            <p class="text-2xl font-bold text-gray-800"> ${extraSalary.toLocaleString()} kr</p>
+            <p class="text-gray-600">Cost for the company to pay out ${prIcVAT.toLocaleString()} kr in net salary:</p>
+            <p class="text-2xl font-bold text-gray-800"> ${corporateCostBuyPrivate.toLocaleString()} kr</p>
+        `;
     }
+
+    // Remove submit event listener
+
+    // Add event listeners to input fields
+    priceIncVATInput.addEventListener('input', updateResults);
+    VATInput.addEventListener('input', updateResults);
+    taxTableInput.addEventListener('input', updateResults);
+    haveStateTaxInput.addEventListener('change', updateResults);
+
+    // Initial calculation
+    updateResults();
 });
