@@ -15,8 +15,8 @@ function calculateTrueTax(taxTable, haveStateTax) {
 function calculateAlternativeCost(VAT, priceIncVAT, trueTax) {
     const priceExVAT = priceIncVAT / (1+VAT);
     const afterTaxPct = 1 - trueTax;
-    const corporateCostBuyPrivate = priceIncVAT / afterTaxPct;
-    const extraSalary = priceExVAT * afterTaxPct;
+    const corporateCostBuyPrivate = Math.round(priceIncVAT / afterTaxPct);
+    const extraSalary = Math.round(priceExVAT * afterTaxPct);
     return { corporateCostBuyPrivate, extraSalary };
 }
 
